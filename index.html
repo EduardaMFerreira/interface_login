@@ -3,41 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de Login</title>
+    <title>Login</title>
     <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
-        <section>
-            <h1>Bem-vindo ao <span>Conhecendo Planetas</span>!</h1>
-            <p>
-                Este é um site dedicado à exploração dos mistérios do universo. <br>
-                Para embarcar nessa jornada galáctica, faça seu login aqui:
-            </p>
-            
-            <h2>Login</h2>
-            <form action="" method="post">
-                <label for="email">E-mail:</label>
-                <input type="email" name="email" id="email">
+        <div class="fundo">
+            <section>
+                <h1>Bem-vindo ao <span>Conhecendo Planetas</span>!</h1>
+                <p>
+                    Este é um site dedicado à exploração dos mistérios do universo. <br>
+                    Para embarcar nessa jornada galáctica, faça seu login aqui:
+                </p>
+                
+                <div id="login">
+                    <h2>Login</h2>
+                    <form action="" method="post">
+                        
+                            <input type="email" name="email" id="email" placeholder="E-mail">
 
-                <label for="senha">Senha:</label>
-                <input type="password" name="senha" id="senha">
+                            
+                            <input type="password" name="senha" id="senha" placeholder="Senha">
 
-                <button type="submit">Entar</button>
+                        <button type="submit">Entar</button>
 
-                <p>Não tem uma conta?<a href="#">Cadastrar</a></p>
-            </form>
-        </section>
-        <section><img src="image/Netuno.png" alt="Planeta Terra"></section>
+                        <p>Não tem uma conta?<a href="#">Cadastrar</a></p>
+                    </form>
+                </div>
+            </section>
+            <section class="planeta"><img src="image/Netuno.png" alt="Planeta Terra">
+            </section>
+        </div>
     </main>
-    <footer>
-        <h1>Conhecendo Planetas</h1>
-        <p>Acompanhe-nos para continuar explorando o universo:</p>
-        <li>
-            <ul><a href="#"><img src="image/redesSociais/instagram.png" alt="Instagram"></a></ul>
-            <ul><a href="#"><img src="image/redesSociais/tiktok.png" alt="Tiktok"></a></ul>
-            <ul><a href="#"><img src="image/redesSociais/youtube.png" alt="YouTube"></a></ul>
-        </li>
-    </footer>
 </body>
 </html>

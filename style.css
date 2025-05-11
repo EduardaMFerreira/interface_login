@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "Sansation", sans-serif;
+}
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url("image/imagem_fundo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.fundo{
+    background-color: rgba(18, 18, 18, 0.549);
+    margin: 3em 0 3em 0;
+    border-radius: 10px; 
+    padding: 3em;
+    display: flex;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2em;
+} 
+
+span {
+    color: rgb(67, 118, 212);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+p {
+    font-size: 1em;
+}
+
+#login{
+    margin-top: 2em; ;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input {
+    border: none;
+    width: 70%;
+    margin: 0.25em 0;
+    height: 2.7em;
+    padding: 0 1em;
+    border-radius: 0.7em; 
+    background-color: rgb(214, 225, 244);
+    color: black;
+}
+
+form button {
+    border: none;
+    border-radius: 0.7em; 
+    width: 76%;
+    padding: 0 1em;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    margin: 1em;
+    height: 2.7em;
+}
+
+a {
+    color: rgb(77, 92, 151);
+    text-decoration: none;
+    padding: 0 0.3em;
+}
