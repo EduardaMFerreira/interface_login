@@ -19,16 +19,12 @@
                 
                 <div id="login">
                     <h2>Login</h2>
-                    <form action="" method="post">
-                        
-                            <input type="email" name="email" id="email" placeholder="E-mail">
-
-                            
-                            <input type="password" name="senha" id="senha" placeholder="Senha">
-
-                        <button type="submit">Entar</button>
-
-                        <p>Não tem uma conta?<a href="#">Cadastrar</a></p>
+                    <form id="loginForm">
+                        <input type="email" id="email" placeholder="E-mail" required>
+                        <input type="password" id="senha" placeholder="Senha" required>
+                        <button type="submit">Entrar</button>
+                        <p>Não tem uma conta? <a href="#">Cadastrar</a></p>
+                        <div id="mensagem" class="error"></div>
                     </form>
                 </div>
             </section>
@@ -36,5 +32,29 @@
             </section>
         </div>
     </main>
+    <script>
+        const form = document.getElementById('loginForm');
+        const mensagem = document.getElementById('mensagem');
+
+        const usuarioValido = {
+            email: 'usuario@exemplo.com',
+            senha: '123456'
+        };
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const email = document.getElementById('email').value;
+            const senha = document.getElementById('senha').value;
+
+            if (email === usuarioValido.email && senha === usuarioValido.senha) {
+
+                localStorage.setItem('usuarioLogado', email); 
+                window.location.href = 'painel.html';
+            } else {
+                mensagem.textContent = 'E-mail ou senha incorretos.';
+            }
+        });
+    </script>
 </body>
 </html>
